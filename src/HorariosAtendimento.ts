@@ -14,7 +14,6 @@ export class HorarioAtendimento {
 
     public buscarAtendimento(professor: string) {
         const dadosAtendimento = this.sistemaAtendimento.buscarDadosServidor(professor)
-        console.log(dadosAtendimento)
         return JSON.parse(dadosAtendimento)
     }
 }
